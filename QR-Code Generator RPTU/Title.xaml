@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="QR_Code_Generator_RPTU.Title"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="75" d:DesignWidth="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Border >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
+                    <GradientStop Color="LightSkyBlue" Offset="0.0"/>
+                    <GradientStop Color="DeepSkyBlue" Offset="0.5"/>
+                    <GradientStop Color="SteelBlue" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Image Source="images/RPTU Logo_minimal12.png" Width="200" Height="75"/>
+        </Border>
+        <Border Grid.Column="1" BorderBrush="SteelBlue" BorderThickness="0,0,0,10">
+            <Image Source="images/QR-Code_icon.png"/>
+        </Border>
+        <Border Grid.Column="2" BorderBrush="SteelBlue" BorderThickness="0,0,0,10">
+            
+            <Label Content="QR-Code Generator von Damian Iturri" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   FontSize="30"
+                   FontFamily="Georgia"
+                   FontWeight="Bold"/>
+        </Border>
+        <Border Grid.Column="3" BorderBrush="SteelBlue" BorderThickness="0,0,0,10">
+            <Image Source="images/QR-Code_icon.png"/>
+        </Border>
+    </Grid>
+</UserControl>
