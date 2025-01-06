@@ -21,6 +21,6 @@ public partial class MainWindow
         generate.AlignmentPattern();
         generate.TimingPattern();
         generate.MessageBits();
-        //generate.MaskPattern();
+        generate.MaskPattern();
     }
 }

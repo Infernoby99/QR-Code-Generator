@@ -7,8 +7,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f2b028-dcc9-471e-80ef-b1761b9d45d7" name="Changes" comment="test">
+    <list default="true" id="c8f2b028-dcc9-471e-80ef-b1761b9d45d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Data/QrCodeValues.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Data/QrCodeValues.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeGenrator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeGenrator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,29 +44,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.QR-Code Generator RPTU.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.7679426",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.QR-Code Generator RPTU.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.7679426&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\zaz59qil\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\zaz59qil\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="QR-Code Generator RPTU" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -100,7 +114,8 @@
       <workItem from="1733207772196" duration="11793000" />
       <workItem from="1733296373156" duration="23426000" />
       <workItem from="1733472327299" duration="1272000" />
-      <workItem from="1734346347123" duration="4157000" />
+      <workItem from="1734346347123" duration="4819000" />
+      <workItem from="1736143577265" duration="19392000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -110,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734361945313</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test2">
+      <option name="closed" value="true" />
+      <created>1734365341152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734365341152</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test2" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

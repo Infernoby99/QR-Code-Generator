@@ -176,8 +176,8 @@ public class QrCodeValues
             change = !change;
         }
         // correction bits
-        CalculatingCorrectionBytes();
-        
+        MessageBin = CalculatingCorrectionBytes();
+        PrintHexadecimal();
         return MessageBin;
     }
     
@@ -188,36 +188,78 @@ public class QrCodeValues
         return new string(charArray);
     }
 
-    private void CalculatingCorrectionBytes()
+    private void PrintHexadecimal()
     {
-        string correctionBytes = "";
+        int[] Hexa = new int[MessageBin.Length / 8];
+        for (int i = 0; i < MessageBin.Length / 8; i++)
+        {
+            int counter = 0;
+            
+            string bin = MessageBin.Substring(i * 8, 8);
+            for (int j = bin.Length - 1; j > 0; j--)
+            {
+                
+            }
+        }
+    }
+
+    private string  CalculatingCorrectionBytes()
+    {
+        string message = MessageBin;
+        string[] correctionBytes = new string[BlockNumber1 + BlockNumber2];
         int[] blocksizes = GetBlockSizes();
-        
+        string[] blockDatalines = new string[BlockNumber1 + BlockNumber2];
+        int index = 0;
         int currentIndex = 0; // Start position for Substring
         
         for (int j = 0; j < BlockNumber1; j++)
         {
-            string blockData = MessageBin.Substring(currentIndex, blocksizes[0] * 8);
-            
-            
+            string blockData = message.Substring(currentIndex, blocksizes[0] * 8);
+            blockDatalines[index] = blockData;
             int[] blockDataDecimal = GetMessagePolynomial(blockData);
             int[] generator = BuildGeneratorPolynomial();
-            correctionBytes += CalculatedCorrectionBytes(blockDataDecimal, generator);
+            correctionBytes[index++] += CalculatedCorrectionBytes(blockDataDecimal, generator);
             currentIndex += blocksizes[0] * 8;
         }
 
         for (int j = 0; j < BlockNumber2; j++)
         {
-            string blockData = MessageBin.Substring(currentIndex, blocksizes[1] * 8);
-
-            
+            string blockData = message.Substring(currentIndex, blocksizes[1] * 8);
+            blockDatalines[index] = blockData;
             int[] blockDataDecimal = GetMessagePolynomial(blockData);
             int[] generator = BuildGeneratorPolynomial();
-            correctionBytes += CalculatedCorrectionBytes(blockDataDecimal, generator);
+            correctionBytes[index++] += CalculatedCorrectionBytes(blockDataDecimal, generator);
             currentIndex += blocksizes[1] * 8;
-            
         }
-        MessageBin += correctionBytes;
+        
+        for (int i = 0; i < blocksizes[1]; i++)
+        {
+            if (i < blocksizes[0])
+            {
+                for (int j = 0; j < BlockNumber1; j++)
+                {
+                    string line = blockDatalines[j];
+                    message += line.Substring(i * 8, 8);
+                }
+            }
+
+            for (int j = BlockNumber1; j < BlockNumber1 + BlockNumber2; j++)
+            {
+                string line = blockDatalines[j];
+                message += line.Substring(i * 8, 8);
+            }
+        }
+
+        for (int i = 0; i < NumberOfCorrectionBytes; i++)
+        {
+            for (int j = 0; j < BlockNumber1 + BlockNumber2; j++)
+            {
+                string line = correctionBytes[j];
+                message += line.Substring(i * 8, 8);
+            }
+        }
+
+        return message;
     }
     
     private string CalculatedCorrectionBytes(int[] polynomial, int[] generator)

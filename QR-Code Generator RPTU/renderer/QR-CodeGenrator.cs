@@ -290,9 +290,9 @@ public class QrCodeGenerator
     public void MaskPattern()
     {
         int mask = CalculateMask();
+        //int mask = 2;
         Console.WriteLine($"Chosen Mask Number:\t\t|==>\t{mask}");
         FormatPatterns(mask);
-        
         
         for (int i = 0; i < Version; i++)
         {
