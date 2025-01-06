@@ -334,7 +334,7 @@ public class QrCodeGenerator
                         break;
                 }
 
-                Rectangle rect = QrCode[i, j] as Rectangle;
+                Rectangle? rect = QrCode[i, j] as Rectangle;
 
                 if (FreeBit[i, j] != 0) continue;
 
