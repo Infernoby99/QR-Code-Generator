@@ -305,11 +305,11 @@ public class QrCodeGenerator
                         else MaskField[i, j] = false;
                         break;
                     case 1:
-                        if (j % 2 == 0 && FreeBit[i, j] == 0) MaskField[i, j] = true;
+                        if (i % 2 == 0 && FreeBit[i, j] == 0) MaskField[i, j] = true;
                         else MaskField[i, j] = false;
                         break;
                     case 2:
-                        if (i % 3 == 0 && FreeBit[i, j] == 0) MaskField[i, j] = true;
+                        if (j % 3 == 0 && FreeBit[i, j] == 0) MaskField[i, j] = true;
                         else MaskField[i, j] = false;
                         break;
                     case 3:

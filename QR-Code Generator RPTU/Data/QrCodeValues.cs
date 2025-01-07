@@ -21,8 +21,8 @@ public class QrCodeValues
 
     private readonly int[,] _correctionBytesBlockGroup1 =
     {
-        { 1, 1, 1, 1, 1, 1 }, // Low (L) - Anzahl Blöcke für jede Version
-        { 1, 1, 1, 2, 2, 2 }, // Medium (M)
+        { 1, 1, 1, 1, 1, 2 }, // Low (L) - Anzahl Blöcke für jede Version
+        { 1, 1, 1, 2, 2, 4 }, // Medium (M)
         { 1, 1, 2, 2, 2, 4 }, // Quartile (Q)
         { 1, 1, 2, 4, 2, 4 } // High (H)
     };
@@ -177,7 +177,6 @@ public class QrCodeValues
         }
         // correction bits
         MessageBin = CalculatingCorrectionBytes();
-        PrintHexadecimal();
         return MessageBin;
     }
     
@@ -188,20 +187,7 @@ public class QrCodeValues
         return new string(charArray);
     }
 
-    private void PrintHexadecimal()
-    {
-        int[] Hexa = new int[MessageBin.Length / 8];
-        for (int i = 0; i < MessageBin.Length / 8; i++)
-        {
-            int counter = 0;
-            
-            string bin = MessageBin.Substring(i * 8, 8);
-            for (int j = bin.Length - 1; j > 0; j--)
-            {
-                
-            }
-        }
-    }
+    
 
     private string  CalculatingCorrectionBytes()
     {
@@ -231,8 +217,9 @@ public class QrCodeValues
             correctionBytes[index++] += CalculatedCorrectionBytes(blockDataDecimal, generator);
             currentIndex += blocksizes[1] * 8;
         }
-        
-        for (int i = 0; i < blocksizes[1]; i++)
+
+        message = "";
+        for (int i = 0; i <= blocksizes[0]; i++)
         {
             if (i < blocksizes[0])
             {
