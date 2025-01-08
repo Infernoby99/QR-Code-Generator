@@ -23,6 +23,10 @@ public class QrCodeGenerator
     private string Message { get; set; }
     private int Version { get; set; }
 
+    private bool error { get; set; }
+    
+    private int levelSelected { get; set; }
+
     private readonly QrCodeValues _getValues = new();
     
     private readonly Canvas _canvas;
@@ -32,7 +36,7 @@ public class QrCodeGenerator
         _canvas = canvas;
         Message = context.Text;
         
-        Version = _getValues.Version(Message.Length);
+        Version = _getValues.Version(Message.Length, 6, 5);
         
         QrCode = new object[Version, Version];
         FreeBit = new int[Version, Version];
@@ -45,8 +49,47 @@ public class QrCodeGenerator
             }
         }
         MaskField = new bool[Version, Version];
+        error = false;
+    }
+    
+    public QrCodeGenerator(Canvas canvas, TextBox context, int selectedVersion, int selectedLevel)
+    {
+        _canvas = canvas;
+        Message = context.Text;
+        
+        Version = _getValues.Version(Message.Length, selectedVersion, selectedLevel);
+        if (Version == -1)
+        {
+            Console.WriteLine("XXXXXXXXERRORXXXXXXXXX");
+            error = true;
+        }
+        else
+        {
+            QrCode = new object[Version, Version];
+            FreeBit = new int[Version, Version];
+
+            for (int i = 0; i < Version; i++)
+            {
+                for (int j = 0; j < Version; j++)
+                {
+                    FreeBit[i, j] = 0;
+                }
+            }
+
+            MaskField = new bool[Version, Version];
+            error = false;
+        }
     }
 
+    public bool ErrorCheck()
+    {
+        return error;
+    }
+
+    public QrCodeValues getValues()
+    {
+        return _getValues;
+    }
     public void QrCodeField()
     {
         double bitSize = Math.Min(_canvas.ActualWidth, _canvas.ActualHeight) / Version;
@@ -167,7 +210,7 @@ public class QrCodeGenerator
         for (int x = 0; x <= messageByte.Length; x++)
         {
             if (col < 0) col++;
-            while (FreeBit[row, col] == 0 && x == messageByte.Length)
+            while (FreeBit[row, col] == 0 && x == messageByte.Length && row < Version - 8)
             {
                 Rectangle? bit = QrCode[row, col] as Rectangle;
                 bit.Fill = Brushes.White;
@@ -287,10 +330,10 @@ public class QrCodeGenerator
         
     }
     
-    public void MaskPattern()
+    public void MaskPattern(int selectedMask)
     {
-        int mask = CalculateMask();
-        //int mask = 2;
+
+        int mask = selectedMask < 8 ? selectedMask : CalculateMask();
         Console.WriteLine($"Chosen Mask Number:\t\t|==>\t{mask}");
         FormatPatterns(mask);
         

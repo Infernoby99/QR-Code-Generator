@@ -37,11 +37,13 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
                         <RowDefinition Height="4*"/>
                     </Grid.RowDefinitions>
                     
                     <TextBox Grid.Row="0" 
                              Name="Message"
+                             TextChanged="Message_OnTextChanged"
                              Margin="20"
                              Height="40"
                              Width="580"
@@ -54,6 +56,8 @@
                              MaxLength="134"
                              />
                     <Button Grid.Row="0"
+                            Name="Generator"
+                            IsEnabled="False"
                             Click="Generate_OnClick"
                             Margin="20, 20, 40, 20"
                             Height="40" 
@@ -65,6 +69,90 @@
                             FontWeight="Bold"
                             FontFamily="arial"
                             />
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <Label HorizontalAlignment="Center"
+                                   HorizontalContentAlignment="Center"
+                                   BorderThickness="0,0,0,5"
+                                   BorderBrush="SteelBlue"
+                                   Width="150"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   >
+                                Korrekturlevel
+                            </Label>
+                            <ComboBox  
+                                Name="ComboBox_CorrectionLevel"
+                                VerticalAlignment="Center" 
+                                Width="150"
+                                Margin="10, 10,10, 10"
+                                SelectedIndex="4">
+                                <ComboBoxItem Content="Low"/>
+                                <ComboBoxItem Content="Mid"/>
+                                <ComboBoxItem Content="Quarter"/>
+                                <ComboBoxItem Content="High"/>
+                                <ComboBoxItem Content="Auto"/>
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <Label HorizontalAlignment="Center"
+                                   HorizontalContentAlignment="Center"
+                                   BorderThickness="0,0,0,5"
+                                   BorderBrush="SteelBlue"
+                                   Width="150"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                            >
+                                Version
+                            </Label>
+                            <ComboBox
+                                Name="ComboBox_Version"
+                                VerticalAlignment="Center" 
+                                Width="150"
+                                Margin="10, 10,10, 10"
+                                SelectedIndex="6">
+                                <ComboBoxItem Content="Version 1"/>
+                                <ComboBoxItem Content="version 2"/>
+                                <ComboBoxItem Content="version 3"/>
+                                <ComboBoxItem Content="version 4"/>
+                                <ComboBoxItem Content="version 5"/>
+                                <ComboBoxItem Content="version 6"/>
+                                <ComboBoxItem Content="Auto"/>
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <Label HorizontalAlignment="Center"
+                                   HorizontalContentAlignment="Center"
+                                   BorderThickness="0,0,0,5"
+                                   BorderBrush="SteelBlue"
+                                   Width="150"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                            >
+                                 Maske
+                            </Label>
+                            <ComboBox Name="ComboBox_Mask"
+                                VerticalAlignment="Center"
+                                Width="150"
+                                Margin="10, 10,10, 10"
+                                SelectedIndex="8">
+                                <ComboBoxItem Content="Mask Pattern 0"/>
+                                <ComboBoxItem Content="Mask Pattern 1"/>
+                                <ComboBoxItem Content="Mask Pattern 2"/>
+                                <ComboBoxItem Content="Mask Pattern 3"/>
+                                <ComboBoxItem Content="Mask Pattern 4"/>
+                                <ComboBoxItem Content="Mask Pattern 5"/>
+                                <ComboBoxItem Content="Mask Pattern 6"/>
+                                <ComboBoxItem Content="Mask Pattern 7"/>
+                                <ComboBoxItem Content="Auto"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </Grid>
                 </Grid>
             </Border>
         </Grid>

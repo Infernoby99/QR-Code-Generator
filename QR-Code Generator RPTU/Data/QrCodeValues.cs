@@ -16,7 +16,7 @@ public class QrCodeValues
         { 7, 10, 15, 20, 26, 18 }, // Low (L) - Anzahl Korrekturbytes für jede Version
         { 10, 16, 26, 18, 24, 16 }, // Medium (M)
         { 13, 22, 18, 26, 18, 24 }, // Quartile (Q)
-        { 17, 28, 22, 16, 22, 18 } // High (H)
+        { 17, 28, 22, 16, 22, 28 } // High (H)
     };
 
     private readonly int[,] _correctionBytesBlockGroup1 =
@@ -49,8 +49,7 @@ public class QrCodeValues
 
     private readonly int[] _antiLog = new int[256];
 
-    readonly string[,] _formatPatterns = new string[4, 8]
-    {
+    private readonly string[,] _formatPatterns = {
         {
             "111011111000100", "111001011110011", "111110110101010", "111100010011101",
             "110011000101111", "110001100011000", "110110001000001", "110100101110110"
@@ -69,6 +68,7 @@ public class QrCodeValues
         }
     };
     private int NumberOfCorrectionBytes { set; get; }
+    
     
     public QrCodeValues()
     {
@@ -98,11 +98,15 @@ public class QrCodeValues
         }
     }
 
-    public int Version(int length)
+    public int Version(int length, int selectedVersion, int selectedLevel)
     {
-        for (int i = 0; i < _levelCapacity.GetLength(1); i++)
+        for (int i = selectedVersion < 6 ? selectedVersion : 0;
+             i < _levelCapacity.GetLength(1);
+             i = selectedVersion < 6 ? 7 : i + 1)
         {
-            for (int j = 3; j >= 0; j--)
+            for (int j = selectedLevel < 4 ? selectedLevel : 3;
+                 j >= 0;
+                 j = selectedLevel < 4 ? -1 : j - 1)
             {
                 if (length <= _levelCapacity[j, i])
                 {
@@ -122,14 +126,13 @@ public class QrCodeValues
                     Console.WriteLine($"Version level \t\t\t|==> \t{i + 1}");
                     Console.WriteLine($"Correction level \t\t|==> \t{_formatPatternLevel[j]}");
                     EccLevel = j;
-                    
                     return ModuleSize;
                 }
             }
         }
-        return 0;
+        return -1;
     }
-
+    
     public string FormatPattern(int mask)
     {
         return _formatPatterns[EccLevel, mask];
@@ -191,62 +194,71 @@ public class QrCodeValues
 
     private string  CalculatingCorrectionBytes()
     {
-        string message = MessageBin;
-        string[] correctionBytes = new string[BlockNumber1 + BlockNumber2];
-        int[] blocksizes = GetBlockSizes();
-        string[] blockDatalines = new string[BlockNumber1 + BlockNumber2];
-        int index = 0;
-        int currentIndex = 0; // Start position for Substring
+        try
+        {
+            string message = MessageBin;
+            string[] correctionBytes = new string[BlockNumber1 + BlockNumber2];
+            int[] blocksizes = GetBlockSizes();
+            string[] blockDatalines = new string[BlockNumber1 + BlockNumber2];
+            int index = 0;
+            int currentIndex = 0; // Start position for Substring
         
-        for (int j = 0; j < BlockNumber1; j++)
-        {
-            string blockData = message.Substring(currentIndex, blocksizes[0] * 8);
-            blockDatalines[index] = blockData;
-            int[] blockDataDecimal = GetMessagePolynomial(blockData);
-            int[] generator = BuildGeneratorPolynomial();
-            correctionBytes[index++] += CalculatedCorrectionBytes(blockDataDecimal, generator);
-            currentIndex += blocksizes[0] * 8;
-        }
-
-        for (int j = 0; j < BlockNumber2; j++)
-        {
-            string blockData = message.Substring(currentIndex, blocksizes[1] * 8);
-            blockDatalines[index] = blockData;
-            int[] blockDataDecimal = GetMessagePolynomial(blockData);
-            int[] generator = BuildGeneratorPolynomial();
-            correctionBytes[index++] += CalculatedCorrectionBytes(blockDataDecimal, generator);
-            currentIndex += blocksizes[1] * 8;
-        }
-
-        message = "";
-        for (int i = 0; i <= blocksizes[0]; i++)
-        {
-            if (i < blocksizes[0])
+            for (int j = 0; j < BlockNumber1; j++)
             {
-                for (int j = 0; j < BlockNumber1; j++)
+                string blockData = message.Substring(currentIndex, blocksizes[0] * 8);
+                blockDatalines[index] = blockData;
+                int[] blockDataDecimal = GetMessagePolynomial(blockData);
+                int[] generator = BuildGeneratorPolynomial();
+                correctionBytes[index++] += CalculatedCorrectionBytes(blockDataDecimal, generator);
+                currentIndex += blocksizes[0] * 8;
+            }
+
+            for (int j = 0; j < BlockNumber2; j++)
+            {
+                string blockData = message.Substring(currentIndex, blocksizes[1] * 8);
+                blockDatalines[index] = blockData;
+                int[] blockDataDecimal = GetMessagePolynomial(blockData);
+                int[] generator = BuildGeneratorPolynomial();
+                correctionBytes[index++] += CalculatedCorrectionBytes(blockDataDecimal, generator);
+                currentIndex += blocksizes[1] * 8;
+            }
+
+            message = "";
+            for (int i = 0; i <= blocksizes[0]; i++)
+            {
+                if (i < blocksizes[0])
+                {
+                    for (int j = 0; j < BlockNumber1; j++)
+                    {
+                        string line = blockDatalines[j];
+                        message += line.Substring(i * 8, 8);
+                    }
+                }
+
+                for (int j = BlockNumber1; j < BlockNumber1 + BlockNumber2; j++)
                 {
                     string line = blockDatalines[j];
                     message += line.Substring(i * 8, 8);
                 }
             }
 
-            for (int j = BlockNumber1; j < BlockNumber1 + BlockNumber2; j++)
+            for (int i = 0; i < NumberOfCorrectionBytes; i++)
             {
-                string line = blockDatalines[j];
-                message += line.Substring(i * 8, 8);
+                for (int j = 0; j < BlockNumber1 + BlockNumber2; j++)
+                {
+                    string line = correctionBytes[j];
+                    message += line.Substring(i * 8, 8);
+                }
             }
-        }
 
-        for (int i = 0; i < NumberOfCorrectionBytes; i++)
+            return message;
+        }
+        catch (Exception ex)
         {
-            for (int j = 0; j < BlockNumber1 + BlockNumber2; j++)
-            {
-                string line = correctionBytes[j];
-                message += line.Substring(i * 8, 8);
-            }
+            MessageBox.Show($"Fehler: {ex.Message}  \n Methode: {ex.TargetSite} " +
+                            $"\nSource: {ex.Source}\n Stacktrace: {ex.StackTrace}");
+            throw;
         }
-
-        return message;
     }
     
     private string CalculatedCorrectionBytes(int[] polynomial, int[] generator)
@@ -293,15 +305,15 @@ public class QrCodeValues
         }
     }
     
-    private void PrintArray(int[] array)
-    {
-        string arrayString = string.Join(", ", array);
-        Console.WriteLine(arrayString);
-    }
+    // private void PrintArray(int[] array)
+    // {
+    //     string arrayString = string.Join(", ", array);
+    //     Console.WriteLine(arrayString);
+    // }
 
     private int[] GetBlockSizes()
     {
-        if (ModuleSize == 33 && (MaxCharaSize + 2 == 62 || MaxCharaSize + 2 == 46))
+        if (ModuleSize == 37 && (MaxCharaSize + 2 == 62 || MaxCharaSize + 2 == 46))
         {
             if (MaxCharaSize + 2 == 62) return [15, 16];
             return [11, 12];

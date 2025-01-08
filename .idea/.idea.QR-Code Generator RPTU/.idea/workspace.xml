@@ -8,16 +8,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f2b028-dcc9-471e-80ef-b1761b9d45d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Navigate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Data/QrCodeValues.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Data/QrCodeValues.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/MainWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/MainWindow.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.g.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_MarkupCompile.lref" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" afterDir="false" />
@@ -32,7 +40,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.Private.CoreLib/src/System/String.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -115,7 +123,8 @@
       <workItem from="1733472327299" duration="1272000" />
       <workItem from="1734346347123" duration="4819000" />
       <workItem from="1736143577265" duration="21584000" />
-      <workItem from="1736233405395" duration="1961000" />
+      <workItem from="1736233405395" duration="20671000" />
+      <workItem from="1736317527116" duration="9999000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -149,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736176155398</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finaly done it">
+      <option name="closed" value="true" />
+      <created>1736236057888</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736236057888</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +190,8 @@
     <MESSAGE value="test2" />
     <MESSAGE value="build block interleaved logic" />
     <MESSAGE value="change" />
-    <option name="LAST_COMMIT_MESSAGE" value="change" />
+    <MESSAGE value="Finaly done it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finaly done it" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
