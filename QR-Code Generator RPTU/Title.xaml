@@ -27,7 +27,7 @@
         </Border>
         <Border Grid.Column="2" BorderBrush="SteelBlue" BorderThickness="0,0,0,10">
             
-            <Label Content="QR-Code Generator von Damian Iturri" 
+            <Label Content="QR-Code Generator bei Damian Iturri"
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center"
                    FontSize="30"

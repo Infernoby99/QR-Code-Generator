@@ -2,10 +2,11 @@
 
 namespace QR_Code_Generator_RPTU.Pages;
 
-public partial class FindersPattern : Page
+public partial class Info : Page
 {
-    public FindersPattern()
+    public Info()
     {
         InitializeComponent();
+        StatusLabel.Content = "Finders Pattern";
     }
 }

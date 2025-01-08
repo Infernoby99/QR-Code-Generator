@@ -1,4 +1,6 @@
-﻿namespace QR_Code_Generator_RPTU;
+﻿using System.Windows;
+
+namespace QR_Code_Generator_RPTU;
 
 public partial class Title
 {

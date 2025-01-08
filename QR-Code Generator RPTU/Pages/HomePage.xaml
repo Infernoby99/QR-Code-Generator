@@ -22,12 +22,23 @@
                 <ColumnDefinition Width="750"/>
             </Grid.ColumnDefinitions>
             
-            <Canvas Grid.Column="0" 
+            <StackPanel Grid.Column="0">
+                <Label Margin="40"
+                       Name="StatusLabel"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="20"
+                       FontFamily="Georgia"
+                       FontWeight="Heavy"/>
+                <Canvas 
                     Name="Canvas"
                     Background="Gray"
                     Width="400"
                     Height="400"
-            />
+                />
+            </StackPanel>
+            
+            
             
             <Border Grid.Column="1" 
                     BorderBrush="SteelBlue" 
@@ -55,6 +66,20 @@
                              BorderThickness="3"
                              MaxLength="134"
                              />
+                    <TextBlock Grid.Row="0"
+                               Name="Placeholder"
+                               Text="Gebe Text zum Generieren ein"
+                               Foreground="Gray"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               TextAlignment="Left"
+                               FontSize="18"
+                               Margin="20"
+                               Padding="5"
+                               Height="40"
+                               Width="580"
+                               Visibility="Visible"
+                               IsHitTestVisible="False"/>
                     <Button Grid.Row="0"
                             Name="Generator"
                             IsEnabled="False"
@@ -153,6 +178,11 @@
                             </ComboBox>
                         </StackPanel>
                     </Grid>
+                    <Button Grid.Row="2"
+                            Content="Page"
+                            Height="50"
+                            Width="100"
+                            Click="ButtonBase_OnClick"/>
                 </Grid>
             </Border>
         </Grid>

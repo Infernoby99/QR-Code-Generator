@@ -1,6 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using QR_Code_Generator_RPTU.renderer;
+using static System.Windows.Media.Colors;
+using Color = System.Drawing.Color;
 
 namespace QR_Code_Generator_RPTU.Pages;
 
@@ -9,6 +12,7 @@ public partial class HomePage : Page
     public HomePage()
     {
         InitializeComponent();
+        StatusLabel.Content = "Generiere einen QR-Code -->";
     }
     
     private void Generate_OnClick(object sender, RoutedEventArgs e)
@@ -21,12 +25,15 @@ public partial class HomePage : Page
         else generate = new QrCodeGenerator(Canvas, Message, version, level);
         if(generate.ErrorCheck())
         {
-           
+            StatusLabel.Content = "Versuchs Nochmal";
+            StatusLabel.Foreground = new SolidColorBrush(Red);
             MessageBox.Show($"Text daten passen nicht! Wähle entweder eine höhere Version oder " +
                             $"niedrigeren Korrekturlevel.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
         else
         {
+            StatusLabel.Content = "Dein Generierter QR-Code";
+            StatusLabel.Foreground = new SolidColorBrush(LimeGreen);
             generate.QrCodeField();
             generate.FindersPattern();
             generate.AlignmentPattern();
@@ -44,8 +51,18 @@ public partial class HomePage : Page
             if (content.Length > 0)
             {
                 Generator.IsEnabled = true;
+                Placeholder.Visibility = Visibility.Hidden;
             }
-            else Generator.IsEnabled = false;
+            else
+            {
+                Generator.IsEnabled = false;
+                Placeholder.Visibility = Visibility.Visible;
+            }
         }
+    }
+
+    private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+    {
+        NavigationService.Navigate(new Info());
     }
 }
