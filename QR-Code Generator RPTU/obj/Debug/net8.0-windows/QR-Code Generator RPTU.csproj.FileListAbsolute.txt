@@ -22,3 +22,5 @@ C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Genera
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU.genruntimeconfig.cache
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\ref\QR-Code Generator RPTU.dll
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU.sourcelink.json
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Pages\HomePage.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Pages\HomePage.baml
