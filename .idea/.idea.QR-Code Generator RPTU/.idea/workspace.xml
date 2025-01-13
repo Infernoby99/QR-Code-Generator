@@ -7,12 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f2b028-dcc9-471e-80ef-b1761b9d45d7" name="Changes" comment="">
+    <list default="true" id="c8f2b028-dcc9-471e-80ef-b1761b9d45d7" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Generator_Field.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Generator_Field.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Information_Field.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Information_Field.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Navigate.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/HomePage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/HomePage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/HomePage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/HomePage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/Info.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/Info.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/Info.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Pages/Info.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/QR-Code Generator RPTU.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/QR-Code Generator RPTU.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Title.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Title.xaml.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" afterDir="false" />
@@ -26,11 +32,10 @@
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.g.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Title.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Title.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeGenrator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeGenrator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +46,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4bda76b5cc453e1edf5d5c754c4a8215edbd3d3e4f80706dcf4f52a4f68979/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QR-Code Generator RPTU/interacitve.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.Private.CoreLib/src/System/String.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -126,7 +134,7 @@
       <workItem from="1736143577265" duration="21584000" />
       <workItem from="1736233405395" duration="20671000" />
       <workItem from="1736317527116" duration="23341000" />
-      <workItem from="1736749448321" duration="1893000" />
+      <workItem from="1736749448321" duration="16302000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -192,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736348607919</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test">
+      <option name="closed" value="true" />
+      <created>1736751526953</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736751526953</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,11 +233,28 @@
     <MESSAGE value="change" />
     <MESSAGE value="Finaly done it" />
     <MESSAGE value="Fix error in version 6 generating" />
-    <MESSAGE value="test" />
     <MESSAGE value="Navigation Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navigation Pages" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeGenrator.cs</url>
+          <line>35</line>
+          <properties documentPath="C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\renderer\QR-CodeGenrator.cs" initialLine="35" containingFunctionPresentation="Constructor 'QrCodeGenerator'">
+            <startOffsets>
+              <option value="879" />
+            </startOffsets>
+            <endOffsets>
+              <option value="896" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="DotNetProject">
         <watch expression="blockDataDecimal[0]" />

@@ -1,12 +1,18 @@
-﻿using System.Windows.Controls;
+﻿using System.CodeDom.Compiler;
+using System.Windows.Controls;
+using QR_Code_Generator_RPTU.renderer;
 
 namespace QR_Code_Generator_RPTU.Pages;
 
 public partial class Info : Page
 {
-    public Info()
+    private QrCodeGenerator Generate;
+    public Info( int level, int version, int mask, TextBox textBox)
     {
         InitializeComponent();
-        StatusLabel.Content = "Finders Pattern";
+        ControlLabel.StatusLabel.Content = "Finders Pattern";
+        Generate = new QrCodeGenerator(ControlLabel.Canvas, textBox);
+        Generate.QrCodeField();
+        Generate.FindersPattern();
     }
 }

@@ -29,7 +29,7 @@ public class QrCodeGenerator
 
     private readonly QrCodeValues _getValues = new();
     
-    private readonly Canvas _canvas;
+    private Canvas _canvas;
 
     public QrCodeGenerator(Canvas canvas, TextBox context)
     {
@@ -79,6 +79,11 @@ public class QrCodeGenerator
             MaskField = new bool[Version, Version];
             error = false;
         }
+    }
+
+    public void setNewCanvas(Canvas newCanvas)
+    {
+        _canvas = newCanvas;
     }
 
     public bool ErrorCheck()
