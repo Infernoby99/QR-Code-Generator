@@ -22,6 +22,11 @@
 
     <ItemGroup>
       <Page Remove="QR-Code_Field.xaml" />
+      <Page Update="Controller\Title.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
     </ItemGroup>
 
     <ItemGroup>
