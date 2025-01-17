@@ -6,11 +6,11 @@
       xmlns:local="clr-namespace:QR_Code_Generator_RPTU"
       xmlns:qrCodeGeneratorRptu="clr-namespace:QR_Code_Generator_RPTU.Controller"
       mc:Ignorable="d"
-      Title="Info" Height="650" Width="1200">
+      Title="Info" Height="700" Width="1210">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="575"/>
         </Grid.RowDefinitions>
         
         <local:Title></local:Title>

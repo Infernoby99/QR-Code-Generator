@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="QR_Code_Generator_RPTU.Controller.IntroductionInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="740">
+    <Grid>
+        <RichTextBox IsReadOnly="True"
+                     Padding="20,20,20,30"
+        >
+            <FlowDocument PagePadding="10">
+                <Paragraph FontSize="18"
+                           FontWeight="Bold"
+                           FontFamily="aria"
+                           Padding="10">
+                    <Run>
+                        Hast du dich jemals gefragt wie ein QR-Code aufgebaut ist, geschweige wie man einen Liest?
+                    </Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>
+                        Klicke dich von Links nach rechts oben durch. Dort werden die einzelnen Bauteile und die Logik erklärt. 
+                    </Run>
+                                
+                    <LineBreak/>
+                    <Run>
+                        Für unsere Nachricht nehmen wir:
+                    </Run>
+                    <LineBreak/>
+                    <Run FontFamily="Comic Sans MS"
+                         Foreground="DodgerBlue">
+                        "Hallo welt wie Gehts."
+                    </Run>
+                                
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        
+    </Grid>
+</UserControl>

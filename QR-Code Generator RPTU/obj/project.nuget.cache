@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "/oxo66IMsPg2hwn2zXR1RmoVciOfjiKmZ0c5fhXCXXSB9qGU/viU4Z1mPzFlwXCPwUUwrT/TJZMoiAvvUE/unA==",
+  "dgSpecHash": "0dDqwGkfGZ527/DqLHhCHBqIONAre9rx9VSsp0u4zp85FhWkNG2ahVPeGA0yhDx9dD6m5d9wlE0CEOMssIhIWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Documents\\_Projekte\\QR-Code Generator RPTU\\QR-Code Generator RPTU\\QR-Code Generator RPTU.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\AppData\\Local\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\gembox.document\\35.0.1946\\gembox.document.35.0.1946.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\harfbuzzsharp\\7.3.0\\harfbuzzsharp.7.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\harfbuzzsharp.nativeassets.macos\\7.3.0\\harfbuzzsharp.nativeassets.macos.7.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\harfbuzzsharp.nativeassets.win32\\7.3.0\\harfbuzzsharp.nativeassets.win32.7.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\sixlabors.imagesharp\\2.1.9\\sixlabors.imagesharp.2.1.9.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\sixlabors.imagesharp.drawing\\1.0.0\\sixlabors.imagesharp.drawing.1.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\skiasharp.nativeassets.macos\\2.88.6\\skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\skiasharp.nativeassets.win32\\2.88.6\\skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\AppData\\Local\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

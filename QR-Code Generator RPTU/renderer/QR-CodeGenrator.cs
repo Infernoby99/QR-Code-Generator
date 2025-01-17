@@ -30,6 +30,27 @@ public class QrCodeGenerator
     private readonly QrCodeValues _getValues = new();
     
     private Canvas _canvas;
+    
+    public QrCodeGenerator(Canvas canvas)
+    {
+        _canvas = canvas;
+        Message = "Hallo Welt, wie gehts";
+        
+        Version = _getValues.Version(Message.Length, 6, 5);
+        
+        QrCode = new object[Version, Version];
+        FreeBit = new int[Version, Version];
+        
+        for (int i = 0; i < Version; i++)
+        {
+            for (int j = 0; j < Version; j++)
+            {
+                FreeBit[i, j] = 0;
+            }
+        }
+        MaskField = new bool[Version, Version];
+        error = false;
+    }
 
     public QrCodeGenerator(Canvas canvas, TextBox context)
     {

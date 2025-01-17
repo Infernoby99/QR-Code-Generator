@@ -72,7 +72,7 @@ public partial class Generator_Field : UserControl
         NavigationService navigationService = NavigationService.GetNavigationService(this);
         if (navigationService != null)
         {
-            navigationService.Navigate(new Info(level, version, mask, Message));
+            navigationService.Navigate(new Info());
         }
     }
 }

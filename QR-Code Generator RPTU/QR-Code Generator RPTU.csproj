@@ -18,6 +18,10 @@
       <Resource Include="images\QR-Code_icon.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
+      <None Remove="images\icons8-zurück-48.png" />
+      <Resource Include="images\icons8-zurück-48.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>
@@ -30,11 +34,23 @@
       <Page Update="Controller\Generator_Field.xaml">
         <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </Page>
+      <Page Update="Controller\Overview.xaml">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Page>
+      <Page Update="Controller\ContextData\IntroductionInfo.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
     </ItemGroup>
 
     <ItemGroup>
       <Compile Remove="QR-Code_Field.xaml.cs" />
       <Compile Remove="interacitve.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="GemBox.Document" Version="35.0.1946" />
     </ItemGroup>
 
 </Project>

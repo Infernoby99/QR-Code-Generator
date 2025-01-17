@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller"
              mc:Ignorable="d"
-             d:DesignHeight="575" d:DesignWidth="1200">
+             d:DesignHeight="625" d:DesignWidth="1210">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="450"/>

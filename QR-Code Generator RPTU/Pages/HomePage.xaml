@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:QR_Code_Generator_RPTU"
       xmlns:controller="clr-namespace:QR_Code_Generator_RPTU.Controller"
       mc:Ignorable="d"
-      Title="HomePage" Height="650" Width="1200">
+      Title="HomePage" Height="700" Width="1210">
     <Grid>
         <Grid>
         <Grid.RowDefinitions>
