@@ -17,26 +17,16 @@ public partial class Information_Field : UserControl
         AddInfo(0);
     }
 
-    internal void AddInfo(int n)
+    private void AddInfo(int n)
     {
         switch (n)
         {
-            case 0: 
-                var introduction = new IntroductionInfo();
-                ContextBorder.Child = introduction;
-                break;
-            case 1:
-                var finders = new FindersPatternInfo();
-                ContextBorder.Child = finders;
-                break;
-            case 2:
-                var alignment = new AlignmentPatternInfo();
-                ContextBorder.Child = alignment;
-                break;
-            case 3:
-                var timing = new TimingPatternInfo();
-                ContextBorder.Child = timing;
-                break;
+            case 0: ContextBorder.Child = new IntroductionInfo(); break;
+            case 1: ContextBorder.Child = new FindersPatternInfo(); break;
+            case 2: ContextBorder.Child = new AlignmentPatternInfo(); break;
+            case 3: ContextBorder.Child = new TimingPatternInfo(); break;
+            case 4: ContextBorder.Child = new MessageBits(); break;
+            case 5: ContextBorder.Child = new MaskenPattern(); break;
         }
     }
     private void Generate_OnClick(object sender, RoutedEventArgs e)
@@ -47,7 +37,7 @@ public partial class Information_Field : UserControl
             numFunc = value;
         }
         
-        QrCodeGenerator generate = new QrCodeGenerator(Canvas);
+        QrCodeGenerator generate = new QrCodeGenerator(Canvas, numFunc);
         generate.QrCodeField();
         Action[] actions =
         {
@@ -75,8 +65,14 @@ public partial class Information_Field : UserControl
                 InfoTitle.Text = "Timing Pattern"; 
                 AddInfo(3);
                 break;
-            case 4: InfoTitle.Text = "Nachrichten Bits"; break;
-            case 5: InfoTitle.Text = "Masken Pattern"; break;
+            case 4: 
+                InfoTitle.Text = "Nachrichten Bits";
+                AddInfo(4);
+                break;
+            case 5: 
+                InfoTitle.Text = "Masken Pattern"; 
+                AddInfo(5);
+                break;
         }
         
         for (int i = 0; i < numFunc; i++)

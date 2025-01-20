@@ -22,6 +22,13 @@
       <Resource Include="images\icons8-zurück-48.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
+      <None Update="images\MovmentPatterns\MovementPattern.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Remove="images\MovmentPatterns\FullMovementPattern.png" />
+      <Resource Include="images\MovmentPatterns\FullMovementPattern.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>
@@ -34,10 +41,15 @@
       <Page Update="Controller\Generator_Field.xaml">
         <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </Page>
-      <Page Update="Controller\Overview.xaml">
-        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      </Page>
       <Page Update="Controller\ContextData\IntroductionInfo.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Controller\ContextData\MessageBits.xaml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Page>
+      <Page Update="CustomMessageBoxes\DataBytes.xaml">
         <Generator>MSBuild:Compile</Generator>
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
@@ -47,6 +59,9 @@
     <ItemGroup>
       <Compile Remove="QR-Code_Field.xaml.cs" />
       <Compile Remove="interacitve.cs" />
+      <Compile Update="CustomMessageBoxes\infoPatternGenerator.xaml.cs">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>

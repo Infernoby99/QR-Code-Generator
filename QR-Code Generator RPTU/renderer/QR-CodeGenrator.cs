@@ -30,12 +30,14 @@ public class QrCodeGenerator
     private readonly QrCodeValues _getValues = new();
     
     private Canvas _canvas;
+
+    private int? information;
     
-    public QrCodeGenerator(Canvas canvas)
+    public QrCodeGenerator(Canvas canvas, int info)
     {
         _canvas = canvas;
-        Message = "Hallo Welt, wie gehts";
-        
+        Message = "Hallo Welt, wie Gehts.";
+        information = info;
         Version = _getValues.Version(Message.Length, 6, 5);
         
         QrCode = new object[Version, Version];
@@ -154,9 +156,11 @@ public class QrCodeGenerator
                     if(posX == i || posX + 6 == i || posY ==  j || posY + 6 == j ||
                        (i > posX + 1 && i < posX + 5 && j > posY + 1 && j < posY + 5))
                     {
-                        if (bit != null) bit.Fill = Brushes.Black;
+                        if (bit != null && information != 1) bit.Fill = Brushes.Black;
+                        else if (bit != null && information == 1) bit.Fill = Brushes.DarkBlue;
                     }
-                    else if (bit != null) bit.Fill = Brushes.White;
+                    else if (bit != null && information != 1) bit.Fill = Brushes.White;
+                    else if (bit != null && information == 1) bit.Fill = Brushes.LightBlue;
                 }
             }
             
@@ -192,13 +196,13 @@ public class QrCodeGenerator
                     {
                         if (bit != null)
                         {
-                            bit.Fill = Brushes.Black;
+                            bit.Fill = information != 2 ? Brushes.Black: Brushes.DarkGreen;
                             FreeBit[i, j] = 2;
                         }
                     }
                     else if (bit != null)
                     {
-                        bit.Fill = Brushes.White;
+                        bit.Fill = information != 2 ? Brushes.White: Brushes.LightGreen;
                         FreeBit[i, j] = 2;
                     }
                 }
@@ -215,8 +219,16 @@ public class QrCodeGenerator
             Rectangle? row = QrCode[start + 2 + i, start] as Rectangle;
             Rectangle? col = QrCode[start, start + 2 + i] as Rectangle;
             
-            row.Fill = i % 2 == 0 ? Brushes.Black : Brushes.White;
-            col.Fill = i % 2 == 0 ? Brushes.Black : Brushes.White;
+            if(information == 3)
+            {
+                row.Fill = i % 2 == 0 ? Brushes.DarkRed : Brushes.Red;
+                col.Fill = i % 2 == 0 ? Brushes.DarkRed : Brushes.Red;
+            }
+            else
+            {
+                row.Fill = i % 2 == 0 ? Brushes.Black : Brushes.White;
+                col.Fill = i % 2 == 0 ? Brushes.Black : Brushes.White;
+            }
 
             FreeBit[(start + 2) + i, start] = 3;
             FreeBit[start, (start + 2 + i)] = 3;
@@ -228,7 +240,6 @@ public class QrCodeGenerator
         int col = Version - 1;
         int row = Version - 1;
         int turn = Version - 4;
-
         bool changeDirection = false;
 
         string messageByte = _getValues.MessageBytes(Message);
@@ -251,7 +262,16 @@ public class QrCodeGenerator
             if (FreeBit[row, col] == 0 && x < messageByte.Length)
             {
                 Rectangle? bit = QrCode[row, col] as Rectangle;
-                bit.Fill = messageByte[x] == '0' ? Brushes.White : Brushes.Black;
+                if(information != 4) bit.Fill = messageByte[x] == '0' ? Brushes.White : Brushes.Black;
+                else if (information == 4)
+                {
+                    if(x < 4)bit.Fill = messageByte[x] == '0' ? Brushes.DodgerBlue : Brushes.MediumBlue;
+                    else if(x < 12) bit.Fill = messageByte[x] == '0' ? Brushes.Lime : Brushes.DarkGreen;
+                    else if(x < 22 * 8) bit.Fill = messageByte[x] == '0' ? Brushes.CornflowerBlue : Brushes.DarkSlateBlue;
+                    else if(x < 22 * 8 + 4) bit.Fill = Brushes.DarkOrange;
+                    else if(x < 27 * 8) bit.Fill = messageByte[x] == '0' ? Brushes.PaleGreen : Brushes.DarkOliveGreen;
+                    else bit.Fill = messageByte[x] == '0' ? Brushes.Red : Brushes.DarkRed;
+                }
 
                 // Jump to end sector
                 if (col == 9 && row == Version - 1)
@@ -499,14 +519,16 @@ public class QrCodeGenerator
                 //  Row Pattern
                 if (FreeBit[8, i] == 0 && (i < 8 || i > Version - 1 - 8) && x < 15)
                 {
-                    RowBits.Fill = formatPattern[x] == '1' ? Brushes.Black : Brushes.White;
+                    if(information == 5) RowBits.Fill = formatPattern[x] == '1' ? Brushes.DarkRed : Brushes.Red;
+                    else RowBits.Fill = formatPattern[x] == '1' ? Brushes.Black : Brushes.White;
                     FreeBit[8, i] = 4;
                     x++;
                 }
                 //  Column Pattern
                 if (FreeBit[i, 8] == 0 && (i < 9 || i > Version - 1 - 7) && y >= 0)
                 {
-                    ColBits.Fill = formatPattern[y] == '1' ? Brushes.Black : Brushes.White;
+                    if(information == 5) ColBits.Fill = formatPattern[y] == '1' ? Brushes.DarkBlue : Brushes.Blue;
+                    else ColBits.Fill = formatPattern[y] == '1' ? Brushes.Black : Brushes.White;
                     FreeBit[i, 8] = 4;
                     y--;
                 }
@@ -514,7 +536,7 @@ public class QrCodeGenerator
 
             Rectangle rect = QrCode[Version - 1 - 7, 8] as Rectangle;
             FreeBit[Version - 1 - 7, 8] = 4;
-            rect.Fill = Brushes.Black;
+            rect.Fill = information == 5 ? Brushes.Green : Brushes.Black;
         }
         catch (Exception ex)
         {

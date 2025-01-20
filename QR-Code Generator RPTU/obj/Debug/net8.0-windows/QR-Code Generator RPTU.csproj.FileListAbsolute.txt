@@ -1,3 +1,5 @@
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\bin\Debug\net8.0-windows\CustomMessageBoxes\infoPatternGenerator.xaml.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\bin\Debug\net8.0-windows\images\MovmentPatterns\MovementPattern.png
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\bin\Debug\net8.0-windows\QR-Code Generator RPTU.exe
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\bin\Debug\net8.0-windows\QR-Code Generator RPTU.deps.json
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\bin\Debug\net8.0-windows\QR-Code Generator RPTU.runtimeconfig.json
@@ -20,12 +22,17 @@ C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Genera
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU.csproj.AssemblyReference.cache
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Title.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\AlignmentPatternInfo.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\FindersPatternInfo.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\IntroductionInfo.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MaskenPattern.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MessageBits.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\TimingPatternInfo.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Generator_Field.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Information_Field.g.cs
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Overview.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Title.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\DataBytes.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\infoPatternGenerator.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Pages\HomePage.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Pages\Info.g.cs
@@ -33,11 +40,16 @@ C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Genera
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU_MarkupCompile.cache
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU_MarkupCompile.lref
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\AlignmentPatternInfo.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\FindersPatternInfo.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\IntroductionInfo.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MaskenPattern.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MessageBits.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\TimingPatternInfo.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Generator_Field.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Information_Field.baml
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Overview.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\DataBytes.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\infoPatternGenerator.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Pages\HomePage.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Pages\Info.baml
@@ -53,7 +65,3 @@ C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Genera
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU.pdb
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU.genruntimeconfig.cache
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\ref\QR-Code Generator RPTU.dll
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\AlignmentPatternInfo.g.cs
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\AlignmentPatternInfo.baml
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\TimingPatternInfo.g.cs
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\TimingPatternInfo.baml

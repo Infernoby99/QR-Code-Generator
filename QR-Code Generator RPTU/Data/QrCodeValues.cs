@@ -178,6 +178,7 @@ public class QrCodeValues
             MessageBin += !change ? "11101100" : "00010001";
             change = !change;
         }
+        Console.WriteLine(MessageBin);
         // correction bits
         MessageBin = CalculatingCorrectionBytes();
         return MessageBin;
@@ -250,7 +251,6 @@ public class QrCodeValues
                     message += line.Substring(i * 8, 8);
                 }
             }
-
             return message;
         }
         catch (Exception ex)
@@ -305,11 +305,11 @@ public class QrCodeValues
         }
     }
     
-    // private void PrintArray(int[] array)
-    // {
-    //     string arrayString = string.Join(", ", array);
-    //     Console.WriteLine(arrayString);
-    // }
+    private void PrintArray(int[] array)
+    { 
+        string arrayString = string.Join(", ", array);
+        Console.WriteLine(arrayString);
+    }
 
     private int[] GetBlockSizes()
     {

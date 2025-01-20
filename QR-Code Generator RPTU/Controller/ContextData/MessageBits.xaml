@@ -5,28 +5,133 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller.ContextData"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="740">
+             d:DesignHeight="1700" d:DesignWidth="740">
     <Grid>
         <RichTextBox IsReadOnly="True"
+                     IsDocumentEnabled="True"
                      Padding="20,20,20,30"
         >
             <FlowDocument PagePadding="10">
-                <Paragraph FontSize="18"
-                           FontWeight="Bold"
-                           FontFamily="aria"
-                           Padding="10">
-                    <Run>Bevor wir unsere Nachricht generieren können müssen wir sie zuerst Decodieren.</Run>
+                <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                    <Run>Bevor wir unsere Nachricht generieren können, müssen wir sie zuerst in Bits dekodieren.</Run>
                     <LineBreak/>
-                    <Run>Für den Qr-Code gibt es mehrere arten eine Nachricht zu kodieren </Run>
-                    <LineBreak/>
-                    <Border Background="LightGray"
-                            Height="130"
-                            Width="70">
-                        <Image Source="/images/MovementPattern.png" 
-                               Height="120"
-                               />
-                    </Border>
+                    <Run>Für den QR-Code gibt es mehrere Arten, eine Nachricht zu kodieren. Das wären:</Run>
                 </Paragraph>
+
+                <!-- Die Liste außerhalb des Paragraphs platzieren -->
+                <List MarkerStyle="Circle" FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="40,0">
+                    <ListItem>
+                        <Paragraph><Run>Numeric</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>Alphanumeric</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>Byte</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>Kanji</Run></Paragraph>
+                    </ListItem>
+                </List>
+
+                <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                    <LineBreak/>
+                    <Run>In diesem Beispiel nehmen wir die </Run> <Run Foreground="Blue">Byte Encodierung.</Run>
+                    <LineBreak/>
+                    <Run>Damit auch ein Scanner erkennen kann wie er die Nachricht lesen kann, haben jede dieser Einzelnen varianten ein eigenes Muster im QR-Code.</Run>
+                    <Run>Dieses Muster befindet sich immer Rechtsunten und ist immer das erste was der Scanner liest. </Run>
+                </Paragraph>
+                
+                <List MarkerStyle="Circle" FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="40,0">
+                    <ListItem>
+                        <Paragraph><Run>0001 --> Numeric</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>0010 --> Alphanumeric</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>0100 --> Byte</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>1000 --> Kanji</Run></Paragraph>
+                    </ListItem>
+                </List>
+                
+                <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                    <Run> Zudem muss man nach dem Encoder die</Run> 
+                    <Run Foreground="LimeGreen">Länge </Run> 
+                    <Run>der Nachricht übergeben. In unserm Beispiel hat die 
+                    Nachricht eine länge von 22 was in Byte 00010110 ist.</Run>
+                    <LineBreak/>
+                    <Run Foreground="Red">(Immer beachten das die Satzzeichen, Leertasten und der gleichen dazuzählen)</Run>
+                </Paragraph>
+                <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                    <Run>Jedoch wie kriegt man ganze Sätze in Bits umgewandelt?</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>Ganz einfach, man nimmt die ASCII-Tabelle. Jedes Zeichen (Buchstaben, Satzzeichen, Zahl,...) verfügt über eine Nummer, 
+                        mit denen die Programme lesen und schreiben können.</Run>
+                    <Run>Diese Nummer wandeln wir in ein Byte (8 Bits) um. Auf diese Weise erhalten wir die Datenbytes der Nachricht.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>Klicke den Button um die</Run>
+                    <Run Foreground="Blue">umgewandelte Nachricht</Run>
+                    <Run>  zu sehen.</Run>
+                </Paragraph>
+                <BlockUIContainer>
+                    <Button FontWeight="Bold"
+                            FontSize="20"
+                            HorizontalAlignment="Center"
+                            Width="150"
+                            BorderBrush="SteelBlue"
+                            BorderThickness="3"
+                            Background="Transparent"
+                            Content="Datenbytes "
+                            Margin="10 ,0"
+                            Click="MsgStructure_Onclick" />
+                </BlockUIContainer>
+                <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                    <Run>Wie man sehen konnte kommen am ende die sogennanten </Run> 
+                        <Run Foreground="Orange">Terminierungsbits.</Run>
+                        <Run>Dadurch kann der Scanner 
+                    erkennen, ab wann die Nachricht aufhört.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>Da jede Version, je nach Korrekturlevel, eine Feste Größe und  maximale anzahl an Zeichen 
+                        erhalten kann, ist es wichtig ihn immer zu füllen falls noch platz ist. 
+                        Dieser Rest wird mit sogenannten </Run>
+                    <Run Foreground="DarkOliveGreen">Paddding Bytes</Run>
+                    <Run>gefüllt.</Run>
+                    <LineBreak/>
+                    <Run>In stetigem Wechsel mit 11101100 und 00010001 wird der Rest bis zur Max. Größe aufgefüllt.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>Zuletzt kommen noch die </Run>
+                    <Run Foreground="DarkRed">KorrekturBytes.</Run>
+                    <Run>Sie werden mit den Datenbytes, inklusive der Paddingbytes, nach dem Reed-Solomon-Verfahren berechnet.</Run>
+                    <Run>Die Korrekturbytes dienen hauptsächlich dem Zweck, wenn ein teil des QR-Codes nicht Lesbar ist, ihn mithilfe der Korrekturbytes zu reparieren.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>Jetzt können wir unsere Nachricht generieren. Wir fangen rechts unten an und legen für jede 0 ein
+                        Weißen bit und für jede 1 einen Schwarzen.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>
+                        Klicken sie auf den Button um zu erfahren wie das 
+                    Muster zur Generierung der Nachricht aussieht.</Run>
+                </Paragraph>
+                <BlockUIContainer>
+                    <Button FontWeight="Bold"
+                            FontSize="20"
+                            HorizontalAlignment="Center"
+                            Width="150"
+                            BorderBrush="SteelBlue"
+                            BorderThickness="3"
+                            Background="Transparent"
+                            Content="Muster"
+                            Margin="10 ,0"
+                            Click="PatternGenerator_Onclick" />
+                </BlockUIContainer>
             </FlowDocument>
         </RichTextBox>
     </Grid>

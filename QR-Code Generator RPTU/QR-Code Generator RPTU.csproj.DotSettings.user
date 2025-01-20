@@ -1,6 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=IMAGES_005CMOVEMENTPATTERN_002EPNG/@EntryIndexedValue">images\MovementPattern.png</s:String>
 	
 	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=CONTROLLER_005CIMAGES/@EntryIndexedValue"></s:String>
 	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=CONTROLLER_005CQR_002DCODE_0020GENERATOR_0020RPTU/@EntryIndexedValue"></s:String>
 	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=CONTROLLER_005CIMAGES/@EntryIndexedValue">Controller\images</s:String>
-	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=CONTROLLER_005CQR_002DCODE_0020GENERATOR_0020RPTU/@EntryIndexedValue">Controller\QR-Code Generator RPTU</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=CONTROLLER_005CQR_002DCODE_0020GENERATOR_0020RPTU/@EntryIndexedValue">Controller\QR-Code Generator RPTU</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=IMAGES_005CMOVEMENTPATTERN_002EPNG/@EntryIndexedValue">images\MovementPattern.png</s:String></wpf:ResourceDictionary>

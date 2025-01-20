@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="QR_Code_Generator_RPTU.Controller.ContextData.MaskenPattern"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller.ContextData"
+             mc:Ignorable="d"
+             d:DesignHeight="900" d:DesignWidth="740">
+    <Grid>
+        
+            <RichTextBox IsReadOnly="True"
+                         IsDocumentEnabled="True"
+                         Padding="20,20,20,30">
+                <FlowDocument PagePadding="10">
+                    <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                        <Run>
+                            Die Masken sind ein wichtiger Bestandteil des QR-Codes. Ihr Hauptzweck liegt darin den QR-Code
+                            lesbarer für den Scanner zu machen. Dadurch will man verhindern das z.B. wenige einfarbige flächen
+                            enstehen oder Muster ähnlichkeiten wie dem Finderspattern und halt alles was den Scanner
+                            Schwierigkeiten zum lesen bereitet.
+                        </Run>
+                        <LineBreak />
+                        <LineBreak />
+                        <Run>
+                            Die Roten und Blauen Markierten bits bilden das sogenannte FormatPattern(FormatMuster)
+                            sie geben den Scanner die Information mit welcher Maske bzw. welches Korrekturlevel
+                            der QR-Code Generiert wurde.
+                        </Run>
+                        <LineBreak />
+                        <LineBreak />
+                        <Run FontWeight="Heavy" TextDecorations="underline">Aufbau:</Run>
+                        <LineBreak />
+                        <LineBreak />
+                        <Run>Die ersten beiden Bits zeigen auf welchen Korrekturlevel man ist.</Run>
+                        <LineBreak />
+                        <Run>
+                            Die nächsten drei sind die Maskennummer die dem Scanner sagt welche Maske man benutzt.
+                        </Run>
+                        <LineBreak />
+                        <Run>Der Rest sind die Korrekturbytes für den Formatspattern falls etwas nicht lesbar ist.</Run>
+                        <LineBreak />
+                        <LineBreak />
+                        <Run>Wähle ein Pattern aus um den Unterschied zu sehen </Run>
+                    </Paragraph>
+                    <BlockUIContainer>
+                        <StackPanel>
+                            <Label HorizontalAlignment="Center"
+                                   HorizontalContentAlignment="Center"
+                                   BorderThickness="0,0,0,5"
+                                   BorderBrush="SteelBlue"
+                                   Width="150"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                            >
+                                Maske
+                            </Label>
+                            <ComboBox Name="ComboBox_Mask"
+                                      VerticalAlignment="Center"
+                                      Width="150"
+                                      Margin="10, 10,10, 10"
+                                      SelectedIndex="1">
+                                <ComboBoxItem Content="Mask Pattern 0"/>
+                                <ComboBoxItem Content="Mask Pattern 1"/>
+                                <ComboBoxItem Content="Mask Pattern 2"/>
+                                <ComboBoxItem Content="Mask Pattern 3"/>
+                                <ComboBoxItem Content="Mask Pattern 4"/>
+                                <ComboBoxItem Content="Mask Pattern 5"/>
+                                <ComboBoxItem Content="Mask Pattern 6"/>
+                                <ComboBoxItem Content="Mask Pattern 7"/>
+                                <ComboBoxItem Content="Auto"/>
+                            </ComboBox>
+                            <Canvas Height="160" 
+                                    Width="160" 
+                                    Background="Gray"/>
+                        </StackPanel>
+                    </BlockUIContainer>
+                    <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                        <Run> Wähle ein Pattern aus um den Unterschied zu sehen </Run>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+    </Grid>
+</UserControl>

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller"
              xmlns:qrCodeGeneratorRptu="clr-namespace:QR_Code_Generator_RPTU"
              mc:Ignorable="d"
-             d:DesignHeight="605" d:DesignWidth="1210">
+             d:DesignHeight="625" d:DesignWidth="1210">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="450" />
