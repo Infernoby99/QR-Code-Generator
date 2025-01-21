@@ -5,9 +5,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:QR_Code_Generator_RPTU.CustomMessageBoxes"
         mc:Ignorable="d"
-        Title="infoPatternGenerator" Height="650" Width="600">
+        Title="infoPatternGenerator" Height="650" Width="430">
     <Grid>
-        <Image Source="../images/MovmentPatterns/FullMovementPattern.png" Height="500"/>
+        <Image Source="../images/MovmentPatterns/FullMovementPattern.png" Height="430"/>
         <Button Content="OK"
                 Width="80"
                 Height="30"

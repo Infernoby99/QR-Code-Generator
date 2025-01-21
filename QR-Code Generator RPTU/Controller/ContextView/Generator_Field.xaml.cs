@@ -32,7 +32,6 @@ public partial class Generator_Field : UserControl
             else
             {
                 Generator.IsEnabled = false;
-                Info.IsEnabled = false;
                 Placeholder.Visibility = Visibility.Visible;
             }
         }
@@ -55,7 +54,6 @@ public partial class Generator_Field : UserControl
         }
         else
         {
-            Info.IsEnabled = true;
             StatusLabel.Content = "Dein Generierter QR-Code";
             StatusLabel.Foreground = new SolidColorBrush(LimeGreen);
             Generate.QrCodeField();
@@ -67,12 +65,5 @@ public partial class Generator_Field : UserControl
         }
     }
 
-    private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
-    {
-        NavigationService navigationService = NavigationService.GetNavigationService(this);
-        if (navigationService != null)
-        {
-            navigationService.Navigate(new Info());
-        }
-    }
+    
 }

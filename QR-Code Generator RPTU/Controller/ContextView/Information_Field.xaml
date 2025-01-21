@@ -123,7 +123,8 @@
                         </Border.Background>
                         <RichTextBox Background="Transparent"
                                      Padding="0,20,0,0"
-                                     IsReadOnly="True">
+                                     IsReadOnly="True"
+                                     BorderBrush="Transparent">
                             <FlowDocument>
                                 <Paragraph FontSize="30"
                                            FontWeight="Heavy"
@@ -150,6 +151,7 @@
                         </Border.Background>
                         <Button Background="Transparent"
                                 Click="ToHomePage_Onclick"
+                                BorderBrush="Transparent"
                         >
                             <Border BorderBrush="SteelBlue"
                                     BorderThickness="3"

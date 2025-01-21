@@ -6,14 +6,14 @@ public class QrCodeValues
     private readonly int[,] _levelCapacity =
     {
         { 17, 32, 53, 78, 106, 134 }, // Low (L)
-        { 14, 26, 42, 62, 84, 106 }, // Medium (M)
-        { 11, 20, 32, 46, 60, 74 }, // Quartile (Q)
-        { 7, 14, 24, 34, 44, 58 } // High (H)
+        { 14, 26, 42, 62,  84, 106 }, // Medium (M)
+        { 11, 20, 32, 46,  60,  74 }, // Quartile (Q)
+        {  7, 14, 24, 34,  44,  58 } // High (H)
     };
 
     private readonly int[,] _correctionBytes =
     {
-        { 7, 10, 15, 20, 26, 18 }, // Low (L) - Anzahl Korrekturbytes für jede Version
+        {  7, 10, 15, 20, 26, 18 }, // Low (L) - Anzahl Korrekturbytes für jede Version
         { 10, 16, 26, 18, 24, 16 }, // Medium (M)
         { 13, 22, 18, 26, 18, 24 }, // Quartile (Q)
         { 17, 28, 22, 16, 22, 28 } // High (H)

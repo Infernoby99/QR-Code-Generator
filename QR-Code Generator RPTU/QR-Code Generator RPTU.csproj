@@ -38,9 +38,6 @@
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
-      <Page Update="Controller\Generator_Field.xaml">
-        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      </Page>
       <Page Update="Controller\ContextData\IntroductionInfo.xaml">
         <Generator>MSBuild:Compile</Generator>
         <XamlRuntime>Wpf</XamlRuntime>
@@ -53,6 +50,17 @@
         <Generator>MSBuild:Compile</Generator>
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Controller\ContextView\Information_Field.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Controller\ContextView\Generator_Field.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </Page>
     </ItemGroup>
 

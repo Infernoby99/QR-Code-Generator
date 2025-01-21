@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller"
+             xmlns:contextData="clr-namespace:QR_Code_Generator_RPTU.Controller.ContextData"
              mc:Ignorable="d"
              d:DesignHeight="625" d:DesignWidth="1210">
     <Grid>
@@ -165,14 +166,8 @@
                             </ComboBox>
                         </StackPanel>
                     </Grid>
-                    <Button Grid.Row="2"
-                            Name="Info"
-                            IsEnabled="False"
-                            Content="Page"
-                            Height="50"
-                            Width="100"
-                            Click="ButtonBase_OnClick"/>
+                    <contextData:IntroductionHome Grid.Row="2"/>
                 </Grid>
-            </Border>
+        </Border>
     </Grid>
 </UserControl>

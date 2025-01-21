@@ -133,8 +133,6 @@ public class QrCodeGenerator
                 Canvas.SetLeft(bit.Bit, j * bitSize);
                 Canvas.SetTop(bit.Bit, i * bitSize);
                 _canvas.Children.Add(bit.Bit);
-                 
-                //set.bit.Fill = (i + j) % 2 == 0 ? Brushes.Black : Brushes.White;
             }
         } 
     }

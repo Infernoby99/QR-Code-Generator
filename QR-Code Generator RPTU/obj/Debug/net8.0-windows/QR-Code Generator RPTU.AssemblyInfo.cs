@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QR-Code Generator RPTU")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+748c03c91d84727bcedee3bc6cf989dfe453d1b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b2b89daa5c7de2cfc6ceda58cb4f96541a07634")]
 [assembly: System.Reflection.AssemblyProductAttribute("QR-Code Generator RPTU")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QR-Code Generator RPTU")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

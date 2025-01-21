@@ -10,6 +10,7 @@ namespace QR_Code_Generator_RPTU.Controller;
 
 public partial class Information_Field : UserControl
 {
+    private  QrCodeGenerator generate { get; set; }
     public Information_Field()
     {
         InitializeComponent();
@@ -29,15 +30,14 @@ public partial class Information_Field : UserControl
             case 5: ContextBorder.Child = new MaskenPattern(); break;
         }
     }
-    private void Generate_OnClick(object sender, RoutedEventArgs e)
+
+    public void GenerateMask(int numFunc)
     {
-        int numFunc = 0;
-        if (sender is Button button && button.Tag is string tagString && int.TryParse(tagString, out int value))
-        {
-            numFunc = value;
-        }
         
-        QrCodeGenerator generate = new QrCodeGenerator(Canvas, numFunc);
+        int mask = 8;
+        
+        
+        generate = new QrCodeGenerator(Canvas, numFunc);
         generate.QrCodeField();
         Action[] actions =
         {
@@ -74,11 +74,24 @@ public partial class Information_Field : UserControl
                 AddInfo(5);
                 break;
         }
+
+        if (ContextBorder.Child is MaskenPattern maskenPattern)
+        {
+            maskenPattern.SetCanvas(Canvas);
+        }
         
         for (int i = 0; i < numFunc; i++)
         {
             if (i < 4) actions[i]();
+            else if (mask < 8) generate.MaskPattern(mask);
             else generate.MaskPattern(8);
+        }
+    }
+    private void Generate_OnClick(object sender, RoutedEventArgs e)
+    {
+        if (sender is Button button && button.Tag is string tagString && int.TryParse(tagString, out int value))
+        {
+            GenerateMask(value);
         }
     }
 

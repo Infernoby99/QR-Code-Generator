@@ -103,7 +103,7 @@
                     <Run Foreground="DarkOliveGreen">Paddding Bytes</Run>
                     <Run>gefüllt.</Run>
                     <LineBreak/>
-                    <Run>In stetigem Wechsel mit 11101100 und 00010001 wird der Rest bis zur Max. Größe aufgefüllt.</Run>
+                    <Run>In stetigem Wechsel mit 11101100 und 00010001 wird der Rest bis zur Max. ZeichenLänge aufgefüllt.</Run>
                     <LineBreak/>
                     <LineBreak/>
                     <Run>Zuletzt kommen noch die </Run>

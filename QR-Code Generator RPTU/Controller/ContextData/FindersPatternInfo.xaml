@@ -15,7 +15,7 @@
                            FontWeight="Bold"
                            FontFamily="aria"
                            Padding="10">
-                    <Run>Die Finder-Quadrate haben eine Kantenlänge von 7 Einheiten und sind umgeben von einer weißen Linie.
+                    <Run>Oder auch Finder-Quadrate haben eine Kantenlänge von 7 Einheiten und sind umgeben von einer weißen Linie.
                         In allen Ecken - bis auf rechts unten - gibt es Finderquadrate.
                         Die Finderbereiche sind in jedem QR-Code immer gleich groß.
                         Immer 7 auf 7 Kästchen, mit dem weißen Rand dann 8 auf 8 Kästchen.  </Run>

@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="QR_Code_Generator_RPTU.Controller.ContextData.IntroductionHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller.ContextData"
+             mc:Ignorable="d"
+             d:DesignHeight="500" d:DesignWidth="740">
+    <Grid>
+        <RichTextBox IsReadOnly="True"
+                     IsDocumentEnabled="True"
+                     Padding="20,20,20,30"
+                     BorderBrush="Transparent"
+                     BorderThickness="0">
+            <FlowDocument >
+                <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                    <Run Foreground="SteelBlue" FontWeight="Heavy">Merkmale zum Generator:</Run>
+                </Paragraph>
+                <List MarkerStyle="Circle" FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="40,0">
+                    <ListItem>
+                        <Paragraph><Run>Der Generator kann bis zu version 6, was genau 134 Zeichen sind, generieren. Satzzeichen, Leertasten
+                         und der gleichen zählen mit dazu.</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>Korrekturlevels bestimmen die Anzahl der Korrektur bytes. Je höher das Level, desto 
+                        mehr Korrekturbytes. Dies kürzt jedoch die Maximale länge der Nachricht.</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>Die Version bestimmt die Größe des QR-Codes. Je nach länge der Nachricht muss 
+                        die Größe angepasst werden.</Run></Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph><Run>Die Maske ist ein Muster das über den QR-Code generiert wird damit er lesbarer wird. 
+                        Mehr dazu findest du bei "Anatomy eines QR-Codes".</Run></Paragraph>
+                    </ListItem>
+                </List>
+                <BlockUIContainer>
+                    <Button FontWeight="Heavy"
+                            FontSize="16"
+                            BorderBrush="SteelBlue"
+                            BorderThickness="3"
+                            Background="Transparent"
+                            Content="Anatomy eines QR-Codes"
+                            Margin="10 ,20"
+                            Width="250"
+                            Height="50"
+                            Click="ButtonBase_OnClick"/>
+                </BlockUIContainer>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</UserControl>
