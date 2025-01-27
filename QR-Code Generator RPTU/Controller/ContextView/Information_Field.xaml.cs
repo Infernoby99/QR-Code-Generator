@@ -70,7 +70,7 @@ public partial class Information_Field : UserControl
                 AddInfo(4);
                 break;
             case 5: 
-                InfoTitle.Text = "Masken Pattern"; 
+                InfoTitle.Text = "Masken"; 
                 AddInfo(5);
                 break;
         }

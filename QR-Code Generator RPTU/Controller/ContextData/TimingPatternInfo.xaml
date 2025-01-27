@@ -15,7 +15,8 @@
                            FontWeight="Bold"
                            FontFamily="aria"
                            Padding="10">
-                    <Run>Zwischen dem linken oberen und den beiden anderen Finderbereichen verläuft jeweils eine schwarz/weiß/schwarz/weiß/schwarz/weiß/..-Linie:
+                    <Run>Zwischen dem linken oberen und den beiden anderen Finderbereichen verläuft jeweils eine schwarz/weiß/schwarz/weiß/schwarz/weiß/..-Linie.
+                        Sie helfen den damit er den QR-Code richtig liest.
                     </Run>
                     <LineBreak/>
                     <LineBreak/>

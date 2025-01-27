@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:QR_Code_Generator_RPTU.Controller.ContextData"
              mc:Ignorable="d"
-             d:DesignHeight="1150" d:DesignWidth="740">
+             d:DesignHeight="1350" d:DesignWidth="740">
     <Grid>
         
             <RichTextBox IsReadOnly="True"
@@ -15,20 +15,21 @@
                     <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
                         <Run>
                             Die Masken sind ein wichtiger Bestandteil des QR-Codes. Ihr Hauptzweck liegt darin den QR-Code
-                            lesbarer für den Scanner zu machen. Dadurch will man verhindern das z.B. wenige einfarbige flächen
+                            lesbarer für den Scanner zu machen. Dadurch will man verhindern das z.B. zu viele einfarbige Flächen
                             enstehen oder Muster ähnlichkeiten wie dem Finderspattern und halt alles was den Scanner
                             Schwierigkeiten zum lesen bereitet.
                         </Run>
                         <LineBreak />
                         <LineBreak />
                         <Run>
-                            Die Roten und Blauen Markierten bits bilden das sogenannte FormatPattern(FormatMuster)
+                            Die Roten und Blauen Markierten bits bilden das sogenannte Format Pattern(Formatmuster)
                             sie geben den Scanner die Information mit welcher Maske bzw. welches Korrekturlevel
-                            der QR-Code Generiert wurde.
+                            der QR-Code Generiert wurde. Die Muster der beiden sind identisch und man fängt beim roten 
+                            immer von links an und den blauen von Unten zu lesen.
                         </Run>
                         <LineBreak />
                         <LineBreak />
-                        <Run FontWeight="Heavy" TextDecorations="underline">Aufbau:</Run>
+                        <Run FontWeight="Heavy" TextDecorations="underline">Aufbau Format Pattern:</Run>
                         <LineBreak />
                         <LineBreak />
                         <Run>Die ersten beiden Bits zeigen auf welchen Korrekturlevel man ist.</Run>
@@ -37,26 +38,31 @@
                             Die nächsten drei sind die Maskennummer die dem Scanner sagt welche Maske man benutzt.
                         </Run>
                         <LineBreak />
-                        <Run>Der Rest sind die Korrekturbytes für den Formatspattern, falls etwas nicht lesbar ist.</Run>
+                        <Run>Der Rest sind die Korrekturbits für den Formatspattern, falls etwas nicht lesbar ist.</Run>
+                        <LineBreak/>
+                        <LineBreak/>
                         <LineBreak/>
                         <Run>Das</Run>
                         <Run Foreground="Green">Grüne Bit</Run>
-                        <Run>wird im QR-Code nie verwendet weswegen er meiste Schwarz ist, manchmal auch weiß.</Run>
+                        <Run>wird im QR-Code nie verwendet, weswegen er meist Schwarz ist oder manchmal auch weiß.</Run>
                         <LineBreak />
                         <LineBreak />
+                        <Run FontWeight="Heavy" TextDecorations="underline">Maske generieren:</Run>
                         <LineBreak />
-                        <Run>Wie generiert man die Richtige Maske? Dazu befolgt man ein Pukte System. 
+                        <LineBreak />
+                        <Run>Wie generiert man die Richtige Maske? Dazu befolgt man ein Puktesystem. 
                         Die Punkteverteilung erfolgt nach 4 Kriterien. Wird ein Kriterium erfüllt so werden gegebenermaßen
                         Punkte verteilt. Die Maske mit den wenigsten Punkten gewinnt.</Run>
                         <LineBreak/>
-                        <Run>Diese wird dann über den Qr-Code gelegt und der XOder Methode Zuende. 
-                        Das bedeutet, wenn ein bit auf anderen der gleichen Farbe trifft wird er Weiß.
+                        <Run>Diese wird dann über den Qr-Code gelegt und der XOder Methode generiert. 
+                        Das bedeutet, wenn ein Maskenbit auf Nachrichtenbit der gleichen Farbe trifft wird er Weiß.
                         Bei unterschiedlichen Farben wird er Schwarz. Der Generator hat automatisch den Mask Pattern 1 gewählt.
                         Du kannst natürlich das Muster verändern. Es Gibt insgesamt 8 Muster die für den QR-Code Festgelegt
                         wurden.</Run>
                         <LineBreak/>
                         <LineBreak/>
-                        <Run>Wähle ein Pattern aus um den Unterschied zu sehen. </Run>
+                        <Run>Wähle ein Pattern aus um den Unterschied zu sehen. Die "Auto" ist die Maske die für unseren 
+                        QR-Code berechnet wurde.</Run>
                     </Paragraph>
                     <BlockUIContainer>
                         <StackPanel>
@@ -100,7 +106,7 @@
                     </BlockUIContainer>
                     <Paragraph Foreground="SteelBlue">________________________________________________________________________________________________________________________________________</Paragraph>
                     <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
-                        <Run>Und so ist ein QR-Code aufgebaut. Rechts neben der Überschrift kommst 
+                        <Run>Und so ist ein QR-Code aufgebaut. Du kannst ihn zum Testen auch scannen. Auf den Pfeil  kommst 
                         du zur Startseite zurück wo du mit dem Generator rumspielen kannst. </Run>
                         <LineBreak/>
                         <LineBreak/>

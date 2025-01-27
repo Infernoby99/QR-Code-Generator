@@ -29,6 +29,8 @@ C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Genera
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MaskenPattern.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MessageBits.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\TimingPatternInfo.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Generator_Field.g.cs
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Information_Field.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\Title.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\DataBytes.g.cs
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\infoPatternGenerator.g.cs
@@ -46,6 +48,8 @@ C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Genera
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MaskenPattern.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\MessageBits.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextData\TimingPatternInfo.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Generator_Field.baml
+C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Information_Field.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\DataBytes.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\CustomMessageBoxes\infoPatternGenerator.baml
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\MainWindow.baml
@@ -63,7 +67,3 @@ C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Genera
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU.pdb
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\QR-Code Generator RPTU.genruntimeconfig.cache
 C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\ref\QR-Code Generator RPTU.dll
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Generator_Field.g.cs
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Information_Field.g.cs
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Generator_Field.baml
-C:\Users\Administrator\Documents\_Projekte\QR-Code Generator RPTU\QR-Code Generator RPTU\obj\Debug\net8.0-windows\Controller\ContextView\Information_Field.baml

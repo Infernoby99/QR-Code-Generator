@@ -36,7 +36,7 @@ public class QrCodeGenerator
     public QrCodeGenerator(Canvas canvas, int info)
     {
         _canvas = canvas;
-        Message = "Hallo Welt, wie Gehts.";
+        Message = "Hallo Welt wie Gehts.";
         information = info;
         Version = _getValues.Version(Message.Length, 6, 5);
         

@@ -98,12 +98,12 @@
                     <LineBreak/>
                     <LineBreak/>
                     <Run>Da jede Version, je nach Korrekturlevel, eine Feste Größe und  maximale anzahl an Zeichen 
-                        erhalten kann, ist es wichtig ihn immer zu füllen falls noch platz ist. 
+                        erhalten kann, ist es wichtig ihn immer zu füllen. 
                         Dieser Rest wird mit sogenannten </Run>
                     <Run Foreground="DarkOliveGreen">Paddding Bytes</Run>
                     <Run>gefüllt.</Run>
                     <LineBreak/>
-                    <Run>In stetigem Wechsel mit 11101100 und 00010001 wird der Rest bis zur Max. ZeichenLänge aufgefüllt.</Run>
+                    <Run>In stetigem Wechsel mit 11101100 und 00010001 wird der Rest bis zur Max. Zeichenanzahl aufgefüllt.</Run>
                     <LineBreak/>
                     <LineBreak/>
                     <Run>Zuletzt kommen noch die </Run>

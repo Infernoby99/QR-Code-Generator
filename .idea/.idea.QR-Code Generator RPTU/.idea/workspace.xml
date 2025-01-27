@@ -8,34 +8,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f2b028-dcc9-471e-80ef-b1761b9d45d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/IntroductionHome.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/IntroductionHome.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/IntroductionHome.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/MaskenPattern.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextView/Generator_Field.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextView/Information_Field.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/CustomMessageBoxes/DataBytes.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/CustomMessageBoxes/infoPatternGenerator.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_5r40zwu5_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_5r40zwu5_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_5r40zwu5_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_5r40zwu5_wpftmp.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_5r40zwu5_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_5r40zwu5_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_d0bc2nus_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_d0bc2nus_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_d0bc2nus_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_d0bc2nus_wpftmp.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_d0bc2nus_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_d0bc2nus_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_knlji3ua_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_knlji3ua_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_knlji3ua_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_knlji3ua_wpftmp.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_knlji3ua_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_knlji3ua_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nfrbn3wo_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nfrbn3wo_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nfrbn3wo_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nfrbn3wo_wpftmp.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nfrbn3wo_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nfrbn3wo_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nqrzsczj_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nqrzsczj_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nqrzsczj_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nqrzsczj_wpftmp.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nqrzsczj_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_nqrzsczj_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_uxslvfyf_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_uxslvfyf_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_uxslvfyf_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_uxslvfyf_wpftmp.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_uxslvfyf_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_uxslvfyf_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_vxxfxy3g_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_vxxfxy3g_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_vxxfxy3g_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_vxxfxy3g_wpftmp.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_vxxfxy3g_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU_vxxfxy3g_wpftmp.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QR-Code Generator RPTU/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/FindersPatternInfo.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/FindersPatternInfo.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/IntroductionHome.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/IntroductionHome.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/IntroductionInfo.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/IntroductionInfo.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/MaskenPattern.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/MaskenPattern.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/MaskenPattern.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/MaskenPattern.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/MessageBits.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/MessageBits.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Generator_Field.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextView/Generator_Field.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Generator_Field.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextView/Generator_Field.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Information_Field.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextView/Information_Field.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/Information_Field.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextView/Information_Field.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/CustomMessageBoxes/infoPatternGenerator.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/CustomMessageBoxes/infoPatternGenerator.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Data/QrCodeValues.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Data/QrCodeValues.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/TimingPatternInfo.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextData/TimingPatternInfo.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextView/Information_Field.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/Controller/ContextView/Information_Field.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/CustomMessageBoxes/DataBytes.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/CustomMessageBoxes/DataBytes.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/QR-Code Generator RPTU.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/QR-Code Generator RPTU.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/FindersPatternInfo.baml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/FindersPatternInfo.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/images/MovmentPatterns/FullMovementPattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/images/MovmentPatterns/FullMovementPattern.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/IntroductionInfo.baml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/IntroductionInfo.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/MessageBits.baml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/MessageBits.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/Generator_Field.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/Generator_Field.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/Information_Field.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/Information_Field.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/TimingPatternInfo.baml" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/Controller/ContextData/TimingPatternInfo.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/QR-Code Generator RPTU.g.resources" afterDir="false" />
@@ -44,7 +83,6 @@
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/ref/QR-Code Generator RPTU.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/obj/Debug/net8.0-windows/refint/QR-Code Generator RPTU.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeBit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeBit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeGenrator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QR-Code Generator RPTU/renderer/QR-CodeGenrator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,33 +107,37 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2oQmUWO8KscRLtmfZUdcHAzhCH6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.QR-Code Generator RPTU.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.7679426&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.QR-Code Generator RPTU.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.7679426",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\zaz59qil\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "\\\\fp0\\dfs\\users\\z\\zaz59qil\\AppData\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\zaz59qil\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="QR-Code Generator RPTU" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/QR-Code Generator RPTU/bin/Debug/net8.0-windows/QR-Code Generator RPTU.exe" />
@@ -151,7 +193,10 @@
       <workItem from="1736836740649" duration="19356000" />
       <workItem from="1737100111617" duration="10500000" />
       <workItem from="1737353585523" duration="29955000" />
-      <workItem from="1737440332510" duration="14586000" />
+      <workItem from="1737440332510" duration="16954000" />
+      <workItem from="1737527422274" duration="11971000" />
+      <workItem from="1737657532314" duration="991000" />
+      <workItem from="1737962773371" duration="4478000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -249,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737385516496</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Final Touches">
+      <option name="closed" value="true" />
+      <created>1737469658144</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737469658144</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +321,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="test2" />
     <MESSAGE value="build block interleaved logic" />
@@ -279,7 +333,8 @@
     <MESSAGE value="work on Navigationservice" />
     <MESSAGE value="info text" />
     <MESSAGE value="Message Bits and Masken Pattern info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Message Bits and Masken Pattern info" />
+    <MESSAGE value="Final Touches" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Touches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

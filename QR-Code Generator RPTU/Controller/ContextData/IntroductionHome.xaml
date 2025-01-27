@@ -31,17 +31,17 @@
                     </ListItem>
                     <ListItem>
                         <Paragraph><Run>Die Maske ist ein Muster das über den QR-Code generiert wird damit er lesbarer wird. 
-                        Mehr dazu findest du bei "Anatomy eines QR-Codes".</Run></Paragraph>
+                        Mehr dazu findest du bei "Anatomie eines QR-Codes".</Run></Paragraph>
                     </ListItem>
                 </List>
-                <BlockUIContainer>
+                <BlockUIContainer Margin="10">
                     <Button FontWeight="Heavy"
                             FontSize="16"
                             BorderBrush="SteelBlue"
                             BorderThickness="3"
                             Background="Transparent"
-                            Content="Anatomy eines QR-Codes"
-                            Margin="10 ,20"
+                            Content="Anatomie eines QR-Codes"
+                            Margin="10 ,10"
                             Width="250"
                             Height="50"
                             Click="ButtonBase_OnClick"/>

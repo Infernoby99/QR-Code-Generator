@@ -33,7 +33,6 @@
                          Foreground="DodgerBlue">
                         "Hallo Welt wie Gehts."
                     </Run>
-                                
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>

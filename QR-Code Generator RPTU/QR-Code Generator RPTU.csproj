@@ -27,7 +27,7 @@
       </None>
       <None Remove="images\MovmentPatterns\FullMovementPattern.png" />
       <Resource Include="images\MovmentPatterns\FullMovementPattern.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Resource>
     </ItemGroup>
 

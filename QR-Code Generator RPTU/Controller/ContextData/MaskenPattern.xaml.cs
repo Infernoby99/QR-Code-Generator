@@ -47,20 +47,20 @@ public partial class MaskenPattern : UserControl
                 //maskBit.Fill = (i + j) % 2 == 0 ? Brushes.White : Brushes.Black;
                 switch (mask)
                 {
-                    case 0: maskBit.Fill = (i + j) % 2 == 0 ? Brushes.White : Brushes.Black; break;
-                    case 1: maskBit.Fill =  i % 2 == 0  ? Brushes.White : Brushes.Black; break;
-                    case 2: maskBit.Fill =  j % 3 == 0 ? Brushes.White : Brushes.Black; break;
-                    case 3: maskBit.Fill =  (i + j) % 3 == 0 ? Brushes.White : Brushes.Black; break;
-                    case 4: maskBit.Fill =  ((i / 2) + (j / 3)) % 2 == 0 ? Brushes.White : Brushes.Black; break;
-                    case 5: maskBit.Fill =  (((i * j) % 2) + ((i * j) % 3) == 0) ? Brushes.White : Brushes.Black; break;
-                    case 6: maskBit.Fill =  (((i * j) % 3 + i * j) % 2 == 0) ? Brushes.White : Brushes.Black; break;
-                    case 7: maskBit.Fill =  (((i * j) % 3 + i + j) % 2 == 0) ? Brushes.White : Brushes.Black; break;
-                    case 8: maskBit.Fill =  i % 2 == 0  ? Brushes.White : Brushes.Black; break;
+                    case 0: maskBit.Fill = (i + j) % 2 != 0 ? Brushes.White : Brushes.Black; break;
+                    case 1: maskBit.Fill =  i % 2 != 0  ? Brushes.White : Brushes.Black; break;
+                    case 2: maskBit.Fill =  j % 3 != 0 ? Brushes.White : Brushes.Black; break;
+                    case 3: maskBit.Fill =  (i + j) % 3 != 0 ? Brushes.White : Brushes.Black; break;
+                    case 4: maskBit.Fill =  ((i / 2) + (j / 3)) % 2 != 0 ? Brushes.White : Brushes.Black; break;
+                    case 5: maskBit.Fill =  ((i * j) % 2) + ((i * j) % 3) != 0 ? Brushes.White : Brushes.Black; break;
+                    case 6: maskBit.Fill =  (((i * j) % 3 + i * j) % 2 != 0) ? Brushes.White : Brushes.Black; break;
+                    case 7: maskBit.Fill =  (((i * j) % 3 + i + j) % 2 != 0) ? Brushes.White : Brushes.Black; break;
+                    case 8: maskBit.Fill =  i % 2 != 0  ? Brushes.White : Brushes.Black; break;
                 }
                 Maskexample.Children.Add(bit.Bit);
             }
 
-            QrCodeGenerator generatorMask = new QrCodeGenerator(QrCanvas, 5);
+            QrCodeGenerator generatorMask = new QrCodeGenerator(QrCanvas, 6);
             generatorMask.QrCodeField();
             generatorMask.FindersPattern();
             generatorMask.TimingPattern();

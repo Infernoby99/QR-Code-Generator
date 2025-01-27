@@ -20,54 +20,57 @@
                          FontSize="16">
                 <FlowDocument>
                     <Paragraph>
-                        <Run Foreground="DodgerBlue">0100 = Encoder</Run>
+                        
+                        <Run Foreground="DodgerBlue">Encoder => 0100</Run>
                         <LineBreak/>
-                        <Run Foreground="LimeGreen">00010110 = Länge</Run>
+                        <Run Foreground="LimeGreen">Länge => 00010110</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01001000 = H</Run>
+                        <Run Foreground="CornflowerBlue">H => 72 => 01001000</Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">01100001 = a</Run>
+                        <Run Foreground="DarkSlateBlue">a => 97 => 01100001</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01101100 = l</Run>
+                        <Run Foreground="CornflowerBlue">l => 108 => 01101100 </Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">01101100 = l</Run>
+                        <Run Foreground="DarkSlateBlue">l => 108 => 01101100</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01101111 = o</Run>
+                        <Run Foreground="CornflowerBlue">o => 111 => 01101111</Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">00100000 = _</Run>
+                        <Run Foreground="DarkSlateBlue">_* => 32 => 00100000 </Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01010111 = w</Run>
+                        <Run Foreground="CornflowerBlue">W => 87 => 01010111</Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">01100101 = e</Run>
+                        <Run Foreground="DarkSlateBlue">e => 101 => 01100101</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01101100 = l</Run>
+                        <Run Foreground="CornflowerBlue">l => 108 => 01101100</Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">01110100 = t</Run>
+                        <Run Foreground="DarkSlateBlue">t => 116 => 01110100</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">00101100 = _</Run>
+                        <Run Foreground="CornflowerBlue">_ => 32 => 00100000 </Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">00100000 = w</Run>
+                        <Run Foreground="DarkSlateBlue">w => 119 => 01110111</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01110111 = i</Run>
+                        <Run Foreground="CornflowerBlue">i => 105 => 01101001</Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">01101001 = e</Run>
+                        <Run Foreground="DarkSlateBlue">e => 101 => 01100101</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">00101100 = _</Run>
+                        <Run Foreground="CornflowerBlue">_ => 32 => 00100000 </Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">00100000 = G</Run>
+                        <Run Foreground="DarkSlateBlue">G => 71 => 01000111 </Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01100111 = e</Run>
+                        <Run Foreground="CornflowerBlue">e => 101 => 01100101</Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">01100101 = h</Run>
+                        <Run Foreground="DarkSlateBlue">h => 104 => 01101000</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01101000 = t</Run>
+                        <Run Foreground="CornflowerBlue">t => 116 => 01110100</Run>
                         <LineBreak/>
-                        <Run Foreground="DarkSlateBlue">01110100 = s</Run>
+                        <Run Foreground="DarkSlateBlue">s => 115 => 01110011</Run>
                         <LineBreak/>
-                        <Run Foreground="CornflowerBlue">01110011 = .</Run>
+                        <Run Foreground="CornflowerBlue">. => 46 => 00101110</Run>
                         <LineBreak/> 
-                        <Run Foreground="Orange">0000 = ENDE</Run>
+                        <Run Foreground="Orange">0000 => ENDE</Run>
                         <LineBreak/>
+                        <Run>*( _ => Leerzeichen)</Run>
+                        <LineBreak></LineBreak>
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>

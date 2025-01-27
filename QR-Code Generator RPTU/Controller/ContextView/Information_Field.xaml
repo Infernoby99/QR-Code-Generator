@@ -87,7 +87,7 @@
                             BorderBrush="SteelBlue"
                             BorderThickness="3"
                             Background="Transparent"
-                            Content="generate message"
+                            Content="Nachrichten Bits"
                             Margin="10 ,30"
                             Tag="4"
                             Click="Generate_OnClick" />
@@ -96,7 +96,7 @@
                             BorderBrush="SteelBlue"
                             BorderThickness="3"
                             Background="Transparent"
-                            Content="Mask Pattern"
+                            Content="Masken"
                             Margin="10 ,30"
                             Tag="5"
                             Click="Generate_OnClick" />
