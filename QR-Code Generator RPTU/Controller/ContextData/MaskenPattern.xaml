@@ -10,7 +10,8 @@
         
             <RichTextBox IsReadOnly="True"
                          IsDocumentEnabled="True"
-                         Padding="20,20,20,30">
+                         Padding="20,20,20,30"
+                         VerticalScrollBarVisibility="Visible">
                 <FlowDocument PagePadding="10">
                     <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
                         <Run>

@@ -10,6 +10,7 @@
         <RichTextBox IsReadOnly="True"
                      IsDocumentEnabled="True"
                      Padding="20,20,20,30"
+                     VerticalScrollBarVisibility="Visible"
         >
             <FlowDocument PagePadding="10">
                 <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
@@ -17,8 +18,7 @@
                     <LineBreak/>
                     <Run>Für den QR-Code gibt es mehrere Arten, eine Nachricht zu kodieren. Das wären:</Run>
                 </Paragraph>
-
-                <!-- Die Liste außerhalb des Paragraphs platzieren -->
+                
                 <List MarkerStyle="Circle" FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="40,0">
                     <ListItem>
                         <Paragraph><Run>Numeric</Run></Paragraph>
