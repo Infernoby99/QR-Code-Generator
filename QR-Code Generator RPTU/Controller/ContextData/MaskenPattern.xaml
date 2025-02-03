@@ -51,15 +51,34 @@
                         <Run FontWeight="Heavy" TextDecorations="underline">Maske generieren:</Run>
                         <LineBreak />
                         <LineBreak />
-                        <Run>Wie generiert man die Richtige Maske? Dazu befolgt man ein Puktesystem. 
-                        Die Punkteverteilung erfolgt nach 4 Kriterien. Wird ein Kriterium erfüllt so werden gegebenermaßen
+                        <Run>Wie generiert man die Richtige Maske? Es Gibt insgesamt 8 Muster die für den QR-Code 
+                            Festgelegt wurden. Dazu befolgt man ein Puktesystem. 
+                        Die Punkteverteilung erfolgt nach 4 Kriterien.</Run>
+                    </Paragraph>
+                
+                    <List MarkerStyle="Circle" FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="40,0">
+                        <ListItem>
+                            <Paragraph><Run>Anzahl an gleichfarbigen Zeilen und Säulen die >= 5 sind.</Run></Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph><Run>Anzahl an gleichfarbigen Flächen, die 2x2 oder größer sind. </Run></Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph><Run>Anzahl an gleichen oder ähnlichen Muster von Finder Quadraten.</Run></Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph><Run>Differenz von Schwarzen und Weißen Bits.</Run></Paragraph>
+                        </ListItem>
+                    </List>
+
+                    <Paragraph FontSize="18" FontWeight="Bold" FontFamily="Arial" Padding="10">
+                        <Run>Wird ein Kriterium erfüllt so werden gegebenermaßen
                         Punkte verteilt. Die Maske mit den wenigsten Punkten gewinnt.</Run>
                         <LineBreak/>
                         <Run>Diese wird dann über den Qr-Code gelegt und der XOder Methode generiert. 
                         Das bedeutet, wenn ein Maskenbit auf Nachrichtenbit der gleichen Farbe trifft wird er Weiß.
                         Bei unterschiedlichen Farben wird er Schwarz. Der Generator hat automatisch den Mask Pattern 1 gewählt.
-                        Du kannst natürlich das Muster verändern. Es Gibt insgesamt 8 Muster die für den QR-Code Festgelegt
-                        wurden.</Run>
+                        Du kannst natürlich das Muster verändern. </Run>
                         <LineBreak/>
                         <LineBreak/>
                         <Run>Wähle ein Pattern aus um den Unterschied zu sehen. Die "Auto" ist die Maske die für unseren 

@@ -190,9 +190,7 @@ public class QrCodeValues
         Array.Reverse(charArray);
         return new string(charArray);
     }
-
     
-
     private string  CalculatingCorrectionBytes()
     {
         try
